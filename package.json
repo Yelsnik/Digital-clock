@@ -1,0 +1,16 @@
+{
+  "name": "digital-clock",
+  "version": "1.0.0",
+  "description": "This is a digital clock project that I built using HTML, css and JavaScript.\r Here is the link https://kingsleyclock.netlify.app/",
+  "main": "clock.js",
+  "scripts": {
+    "build": "tailwindcss -i ./style.css -o ./css/output.css",
+    "watch": "tailwindcss -i ./style.css -o ./css/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
