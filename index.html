@@ -10,7 +10,11 @@
   </head>
   <body class="bg-blue-600">
     <main class="bg-purple-600 pb-72">
-      <div class="grid grid-cols-6 clock"></div>
+      <div class="grid grid-cols-6 clock">
+        <span id="hr">${h}</span> : <span id="mn">${m}</span> :
+        <span id="sn">${s}</span>
+        <span id="ampm">${amorPm}</span>
+      </div>
     </main>
     <script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
 

@@ -15,6 +15,8 @@ const before = new Date("February 1 2019 12:00:00");
 console.log(dateFns.distanceInWords(now, before, { addSuffix: true }));
 */
 
+/*
+////// Clock code
 const clock = document.querySelector(".clock");
 
 const tick = () => {
@@ -32,6 +34,8 @@ const tick = () => {
   if (h < 1) {
     h = h + 12;
   }
+
+
   const html = `
    <span>${h}</span>  :
    <span>${m}</span>  :
@@ -43,3 +47,4 @@ const tick = () => {
 };
 
 setInterval(tick, 1000);
+*/
