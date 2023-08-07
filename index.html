@@ -8,12 +8,39 @@
     <title>Dates & Times</title>
     <style></style>
   </head>
-  <body class="bg-blue-600">
-    <main class="bg-purple-600 pb-72">
-      <div class="grid grid-cols-6 clock">
-        <span id="hr">${h}</span> : <span id="mn">${m}</span> :
-        <span id="sn">${s}</span>
-        <span id="ampm">${amorPm}</span>
+  <body class="bg-gray-600">
+    <main class="bg-purple-600 pb-40 pt-40">
+      <header>
+        <h1
+          class="grid justify-center font-bold text-5xl italic font-serif text-yellow-400"
+        >
+          Digital Clock
+        </h1>
+      </header>
+      <div
+        class="grid grid-cols-6 justify-center clock mt-20 lg:mx-32 border-4 border-red-500 rounded-lg bg-gray-800 mx-3 lg:py-8 py-5 overflow-hidden"
+      >
+        <div
+          class="text-center font-bold text-white font-sans italic text-3xl"
+          id="hr"
+        >
+          00
+        </div>
+        <div class="text-white text-3xl">:</div>
+        <div
+          class="text-center font-bold text-white font-sans italic text-3xl"
+          id="mn"
+        >
+          00
+        </div>
+        <div class="text-white text-3xl">:</div>
+        <div
+          class="text-center font-bold font-sans italic text-white text-3xl"
+          id="sn"
+        >
+          00
+        </div>
+        <div class="text-white text-3xl font-bold italic" id="ampm">AM</div>
       </div>
     </main>
     <script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>

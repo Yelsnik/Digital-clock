@@ -1,22 +1,10 @@
 "use script";
-/*
-const now = new Date("june 6, 2021");
 
-//console.log(dateFns.isToday(now));
+const hr = document.querySelector("#hr");
+const mn = document.querySelector("#mn");
+const sn = document.querySelector("#sn");
+const ampm = document.querySelector("#ampm");
 
-//Formatting options
-console.log(dateFns.format(now, "YYYY"));
-console.log(dateFns.format(now, `MM`));
-console.log(dateFns.format(now, "dddd Do MMMM, YYYY"));
-
-// comparing dates
-const before = new Date("February 1 2019 12:00:00");
-
-console.log(dateFns.distanceInWords(now, before, { addSuffix: true }));
-*/
-
-/*
-////// Clock code
 const clock = document.querySelector(".clock");
 
 const tick = () => {
@@ -34,17 +22,12 @@ const tick = () => {
   if (h < 1) {
     h = h + 12;
   }
+  //console.log(h, m, s);
 
-
-  const html = `
-   <span>${h}</span>  :
-   <span>${m}</span>  :
-   <span>${s}</span> 
-   <span>${amorPm}</span> 
-  `;
-
-  clock.innerHTML = html;
+  hr.textContent = h;
+  mn.textContent = m;
+  sn.textContent = s;
+  ampm.textContent = amorPm;
 };
 
 setInterval(tick, 1000);
-*/
